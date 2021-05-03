@@ -12,86 +12,187 @@ html {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/11_background.png") no-repeat 50% 50%;
+    background-image: url("img/11_background.png");
     background-size: cover;
+    background-position: 0 0;
+    /*transform: translateX(0);*/
+    animation: background-shift 30s linear infinite;
 }
 
 .distance_cloud {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/10_distant_clouds.png") no-repeat 50% 50%;
+    background-image: url("img/10_distant_clouds.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-500px);*/
+    animation: distance_cloud-shift 25s linear infinite;
 }
 
 .distance_cloud1 {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/09_distant_clouds1.png") no-repeat 50% 50%;
+    background-image: url("img/09_distant_clouds1.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-450px);*/
+    animation: distance_cloud1-shift 25s linear infinite;
 }
 
 .cloud {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/08_clouds.png") no-repeat 50% 50%;
+    background-image: url("img/08_clouds.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-400px);*/
+    animation: cloud-shift 25s linear infinite;
 }
 
 .huge_cloud {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/07_huge_clouds.png") no-repeat 50% 50%;
+    background-image: url("img/07_huge_clouds.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-350px);*/
+    animation: huge_cloud-shift 25s linear infinite;
 }
 
 .hill2 {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/06_hill2.png") no-repeat 50% 50%;
+    background-image: url("img/06_hill2.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform : translateX(-300px);*/
+    animation: hill2-shift 25s linear infinite;
 }
 
 .hill1 {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/05_hill1.png") no-repeat 50% 50%;
+    background-image: url("img/05_hill1.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform : translateX(-250px);*/
+    animation: hill1-shift 25s linear infinite;
 }
 
 .bushes {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/04_bushes.png") no-repeat 50% 50%;
+    background-image: url("img/04_bushes.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-200px);*/
+    animation: bushes-shift 25s linear infinite;
 }
 
 .distance_tree {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/03_distant_trees.png") no-repeat 50% 50%;
+    background-image: url("img/03_distant_trees.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-150px);*/
+    animation: distance_tree-shift 25s linear infinite;
 }
 
 .trees_and_bushes {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/02_trees and bushes.png") no-repeat 50% 50%;
+    background-image: url("img/02_trees and bushes.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-100px);*/
+    animation: trees_and_bushes-shift 25s linear infinite;
 }
 
 .ground {
     position : absolute;
     width : 100vw;
     height: 100vh;
-    background: url("img/01_ground.png") no-repeat 50% 50%;
+    background-image: url("img/01_ground.png");
     background-size: 100vw 100%;
+    background-position: 0 0;
+    /*transform: translateX(-50px);*/
+    animation: ground-shift 25s linear infinite;
+}
+
+@keyframes background-shift {
+    100% {
+        background-position : 100vw 0;
+    }
+}
+
+@keyframes distance_cloud-shift {
+   100% {
+       background-position: 200vw 0;
+   }
+}
+
+@keyframes distance_cloud1-shift {
+    100% {
+        background-position: 220vw 0;
+    }
+}
+
+@keyframes cloud-shift {
+    100% {
+        background-position: 250vw 0;
+    }
+}
+
+@keyframes huge_cloud-shift {
+    100% {
+        background-position: 280vw 0;
+    }
+}
+
+@keyframes hill2-shift {
+    100% {
+        background-position: 300vw 0;
+    }
+}
+
+@keyframes bushes-shift {
+    100% {
+        background-position: 330vw 0;
+    }
+}
+
+@keyframes distance_tree-shift {
+   100% {
+       background-position: 350vw 0;
+   }
+}
+
+@keyframes trees_and_bushes-shift {
+    100% {
+        background-position: 380vw 0;
+    }
+}
+
+@keyframes ground-shift {
+  100% {
+      background-position: 400vw 0;
+  }
+}
+
+.tuk_tuk {
+    position : absolute;
+    height : 40%;
+    left: 60%;
+    bottom : 2%;
+    transform : translateX(-30%);
 }
