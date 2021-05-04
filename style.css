@@ -9,13 +9,16 @@ html, body {
 header {
     background-color: #50dcd8;
     text-align: center;
-    padding : 25px;
+    padding : 10px;
+    font-family: 'Itim', cursive;
 }
 
 h1. {
-    font-size: 36px;
+    font-size: 20px;
+    opacity : 0.6;
 }
 
+/* first parallax with animation*/
 .background {
     position : absolute;
     width : 100vw;
@@ -190,7 +193,7 @@ h1. {
     position : absolute;
     height : 35%;
     left: 40%;
-    top : 450px;
+    top : 500px;
     bottom : 5%;
     transform : translateX(-30%);
 }
@@ -203,8 +206,10 @@ h1. {
     transform: translateX(-20%);
 }
 
+
+/* information part*/
 .info {
-    top : 600px;
+    top : 650px;
     height: 100%;
     width: 100%;
     margin : 0 auto;
@@ -212,6 +217,21 @@ h1. {
     position: absolute;
     z-index : 1000;
     font-family: 'Itim', cursive;
+}
+h4 {
+    margin-left: 140px;
+    color : #206c5d;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 #97b8b5,
+    1px 2px 0 #97b8b5,
+    1px 4px 0 #97b8b5,
+    1px 5px 0 #97b8b5,
+    1px 6px 0 #97b8b5,
+    1px 7px 0 #97b8b5,
+    5px 13px 15px black;
 }
 
 p {
@@ -237,23 +257,77 @@ p {
 .img-container .row {
     margin-left: 50px;
     width : 120%;
-    margin-top : 130px;
+    margin-top : 140px;
 }
 
 .img-large {
     margin-top: 55px;
 }
 
-.white-space {
+/* 3D text */
+.threeD {
     position: absolute;
-    top: 1400px;
-    margin : 0 auto;
-    height: 100%;
-    width: 100%;
+    top: 1500px;
+    height: 120px;
+    width: 50%;
+    margin-left: 750px;
     z-index: 1000;
     text-align: center;
+    font-family: 'Itim', cursive;
+    font-size: 36px;
+    color : #206c5d;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.1em;
+    transition: 0.3s;
+    text-shadow: 1px 1px 0 #97b8b5,
+    1px 2px 0 #97b8b5,
+    1px 4px 0 #97b8b5,
+    1px 5px 0 #97b8b5,
+    1px 6px 0 #97b8b5,
+    1px 7px 0 #97b8b5,
+    5px 13px 15px black;
 }
 
-h2 {
+.threeD:hover {
+    transition : 0.3s;
+    transform : scale(1.1)translate(-50%, -50%);
+    text-shadow: 1px -1px 0 #97b8b5,
+    1px -2px 0 #97b8b5,
+    1px -3px 0 #97b8b5,
+    1px -4px 0 #97b8b5,
+    1px -5px 0 #97b8b5,
+    1px -6px 0 #97b8b5,
+    1px -7px 0 #97b8b5,
+    1px -8px 0 #97b8b5,
+    5px -13px -15px black,
+    5px -13px -25px #808080;
+}
+
+
+.parallax2 {
+    position: absolute;
+    top : 1550px;
+    margin: 0;
+    z-index: 1000;
+    background-image: url("img/Together-We-Can.jpg");
+    min-height: 750px;
+    width : 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* the last paragraph */
+.content {
+    position : absolute;
+    top: 2350px;
+    margin-left: 150px;
+    z-index: 1000;
     font-family: 'Itim', cursive;
+    font-size: 25px;
+    line-height: 30px;
+    opacity : 0.6;
+    width : 80%;
 }
