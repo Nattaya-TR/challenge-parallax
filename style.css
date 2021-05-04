@@ -1,11 +1,19 @@
-* {
+
+html, body {
     margin : 0;
     padding : 0;
+    width : 100%;
+    overflow-x: hidden;
 }
 
-html {
-    width : 100%;
-    height: 100%;
+header {
+    background-color: #50dcd8;
+    text-align: center;
+    padding : 25px;
+}
+
+h1. {
+    font-size: 36px;
 }
 
 .background {
@@ -15,7 +23,6 @@ html {
     background-image: url("img/11_background.png");
     background-size: cover;
     background-position: 0 0;
-    /*transform: translateX(0);*/
     animation: background-shift 30s linear infinite;
 }
 
@@ -26,7 +33,6 @@ html {
     background-image: url("img/10_distant_clouds.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-500px);*/
     animation: distance_cloud-shift 25s linear infinite;
 }
 
@@ -37,7 +43,6 @@ html {
     background-image: url("img/09_distant_clouds1.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-450px);*/
     animation: distance_cloud1-shift 25s linear infinite;
 }
 
@@ -48,7 +53,6 @@ html {
     background-image: url("img/08_clouds.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-400px);*/
     animation: cloud-shift 25s linear infinite;
 }
 
@@ -59,7 +63,6 @@ html {
     background-image: url("img/07_huge_clouds.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-350px);*/
     animation: huge_cloud-shift 25s linear infinite;
 }
 
@@ -70,7 +73,6 @@ html {
     background-image: url("img/06_hill2.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform : translateX(-300px);*/
     animation: hill2-shift 25s linear infinite;
 }
 
@@ -81,7 +83,6 @@ html {
     background-image: url("img/05_hill1.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform : translateX(-250px);*/
     animation: hill1-shift 25s linear infinite;
 }
 
@@ -92,7 +93,6 @@ html {
     background-image: url("img/04_bushes.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-200px);*/
     animation: bushes-shift 25s linear infinite;
 }
 
@@ -103,7 +103,6 @@ html {
     background-image: url("img/03_distant_trees.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-150px);*/
     animation: distance_tree-shift 25s linear infinite;
 }
 
@@ -114,7 +113,6 @@ html {
     background-image: url("img/02_trees and bushes.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-100px);*/
     animation: trees_and_bushes-shift 25s linear infinite;
 }
 
@@ -125,7 +123,6 @@ html {
     background-image: url("img/01_ground.png");
     background-size: 100vw 100%;
     background-position: 0 0;
-    /*transform: translateX(-50px);*/
     animation: ground-shift 25s linear infinite;
 }
 
@@ -191,8 +188,72 @@ html {
 
 .tuk_tuk {
     position : absolute;
-    height : 40%;
-    left: 60%;
-    bottom : 2%;
+    height : 35%;
+    left: 40%;
+    top : 450px;
+    bottom : 5%;
     transform : translateX(-30%);
+}
+
+.running {
+    position : absolute;
+    height: 18%;
+    left : 75%;
+    bottom : 10%;
+    transform: translateX(-20%);
+}
+
+.info {
+    top : 600px;
+    height: 100%;
+    width: 100%;
+    margin : 0 auto;
+    padding : 80px 20px;
+    position: absolute;
+    z-index : 1000;
+    font-family: 'Itim', cursive;
+}
+
+p {
+    line-height : 35px;
+    text-align: justify;
+}
+
+.info img {
+    width : 100%;
+}
+
+.info-container {
+    margin : 0 auto;
+    width : 90%;
+    padding-top: 100px;
+}
+
+.text-container p {
+    font-size : 20px;
+    opacity : 0.6;
+}
+
+.img-container .row {
+    margin-left: 50px;
+    width : 120%;
+    margin-top : 130px;
+}
+
+.img-large {
+    margin-top: 55px;
+}
+
+.white-space {
+    position: absolute;
+    top: 1400px;
+    margin : 0 auto;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Itim', cursive;
 }
