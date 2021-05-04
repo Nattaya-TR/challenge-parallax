@@ -195,7 +195,7 @@ h1. {
     left: 40%;
     top : 500px;
     bottom : 5%;
-    /*transition : transform 0.5s ease-in;*/
+    transform: translateX(-20%);
 }
 
 .running {
@@ -203,8 +203,7 @@ h1. {
     height: 18%;
     left : 75%;
     bottom : 10%;
-    /*transform: translateX(-20%);*/
-    transition : transform 0.5s ease-in;
+    transform: translateX(-20%);
 }
 
 
